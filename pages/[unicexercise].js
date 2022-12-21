@@ -152,6 +152,7 @@ export default function UnicExercice({ ex, ytVideos }) {
 
               return (
                 <SwiperSlide
+                  key={videoId}
                   onClick={() =>
                     openInNewTab(
                       `${YT_URL}?v=${videoId}&ab_channel=${channelName}`
